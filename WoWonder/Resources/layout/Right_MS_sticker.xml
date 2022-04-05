@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:padding="3dp"
+                android:layout_margin="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main"
+                android:paddingEnd="3dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bubble_layout"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include
+	        android:id="@+id/ForwardLayout"
+	        layout="@layout/ForwardMessageViewLayout" 
+	        android:visibility="gone" /> 
+        
+        <include
+	        android:id="@+id/replied_message_view"
+	        layout="@layout/RepliedMessageViewLayout" 
+	        android:visibility="gone" />
+        <FrameLayout
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+	            android:id="@+id/imgDisplay"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/ImagePlacholder_circle" />
+            <ProgressBar
+              android:id="@+id/loadingProgressview"
+              android:layout_width="45dp"
+              android:layout_height="45dp"
+              android:layout_centerVertical="true"
+              android:max="100"
+              android:progress="0"
+              android:visibility="gone"
+              android:layout_marginEnd="1dp"
+              android:layout_marginStart="1dp"
+              android:indeterminate="true"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:progressBackgroundTint="@color/textLight_color"
+              android:layout_centerHorizontal="true" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom|end"
+            android:layout_gravity="bottom|end"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="7dp"
+            android:translationY="0dp">
+            <TextView
+                android:textColor="?attr/colorHint"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:text="10:00 PM" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/starIcon"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    app:lottie_loop="false"
+                    android:layout_centerInParent="true"
+                    app:lottie_fileName="FavAnim.json" />
+                <ImageView
+                    android:id="@+id/fav"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_fav_post_vector"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="?attr/colorHint"
+                android:id="@+id/seen"
+                android:textSize="15dp"
+                android:text="Ic"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/countLikeSection"
+    android:layout_alignStart="@+id/bubble_layout"
+    android:layout_below="@+id/bubble_layout"
+    android:layout_width="wrap_content" 
+    android:visibility="gone"
+    android:clickable="true"
+    android:translationY="-5dp"
+    android:gravity="center"
+    android:backgroundTint="?attr/colorFill"
+    android:background="@drawable/shape_radius_btn"
+    android:layout_height="20dp">
+    <ImageView
+      android:id="@+id/ImagecountLike"
+      android:layout_width="16dp"
+      android:layout_height="16dp"
+      android:src="@drawable/emoji_love"
+      android:layout_margin="5dp"
+      android:scaleType="centerCrop" />
+  </LinearLayout>
+</RelativeLayout>

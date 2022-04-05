@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+  <!-- Drop Shadow Stack -->
+  <item>
+    <shape>
+      <padding
+          android:bottom="1.5dp"
+          android:left="1.5dp"
+          android:right="1.5dp"
+          android:top="1.5dp" />
+
+      <solid android:color="?attr/ShapeCircleColor1" />
+
+      <corners android:radius="10dp" />
+    </shape>
+  </item>
+  <item>
+    <shape>
+      <padding
+          android:bottom="1.5dp"
+          android:left="1.5dp"
+          android:right="1.5dp"
+          android:top="1.5dp" />
+
+      <solid android:color="?attr/ShapeCircleColor2" />
+
+      <corners android:radius="10dp" />
+    </shape>
+  </item>
+  <item>
+    <shape>
+      <padding
+          android:bottom="1.5dp"
+          android:left="1.5dp"
+          android:right="1.5dp"
+          android:top="1.5dp" />
+
+      <solid android:color="?attr/ShapeCircleColor3" />
+
+      <corners android:radius="10dp" />
+    </shape>
+  </item>
+  <item>
+    <shape>
+      <padding
+          android:bottom="1.5dp"
+          android:left="1.5dp"
+          android:right="1.5dp"
+          android:top="1.5dp" />
+
+      <solid android:color="?attr/ShapeCircleColor4" />
+
+      <corners android:radius="10dp" />
+    </shape>
+  </item>
+  <item>
+    <shape>
+      <padding
+          android:bottom="1.5dp"
+          android:left="1.5dp"
+          android:right="1.5dp"
+          android:top="1.5dp" />
+
+      <solid android:color="?attr/ShapeCircleColor5" />
+
+      <corners android:radius="10dp" />
+    </shape>
+  </item>
+
+  <!-- Background -->
+  <item
+      android:id="@+id/itemShape">
+    <shape>
+      <solid android:color="?attr/ShapeCircleColor6" />
+
+      <corners android:radius="10dp" />
+    </shape>
+  </item>
+
+</layer-list>

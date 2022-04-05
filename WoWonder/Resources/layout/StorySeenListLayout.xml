@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"  
+    android:layout_width="match_parent"  
+    android:id="@+id/bottom_sheet" 
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/rounded_dialog"
+    android:backgroundTint="@color/accent"  
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/bottom_sheet_behavior" >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ic"
+                android:layout_gravity="end"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/textLight_color"
+                android:padding="15dp"
+                android:id="@+id/toolbar_share" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ic"
+                android:layout_gravity="end"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/textLight_color"
+                android:padding="15dp"
+                android:id="@+id/toolbar_delete" />
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorDivider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorFill"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/Lbl_NoOneViewTheStory" 
+                android:visibility="gone" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/seenList"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

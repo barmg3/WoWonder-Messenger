@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_call_chat_view"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="?attr/colorPrimary">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="100dp">
+		<RelativeLayout
+			android:id="@+id/main"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="?attr/colorPrimary"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"
+			android:clickable="false"
+			android:focusable="false"
+			android:orientation="vertical">
+			<ImageView
+				android:id="@+id/UserImageView"
+				android:scaleType="centerCrop"
+				android:layout_width="115dp"
+				android:layout_height="115dp"
+				android:focusable="false"
+				android:clickable="false"
+				android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				android:src="@drawable/no_profile_image_circle"
+				android:layout_marginStart="5dp" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/message_call_button"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:layout_alignBottom="@id/UserImageView"
+				android:layout_toEndOf="@id/UserImageView"
+				android:layout_above="@id/UserImageView"
+				android:src="@drawable/ic_call_reply"
+                android:padding="5dp"
+		        android:translationX="-20dp"
+				app:cb_color="@color/accent"
+				app:cb_pressedRingWidth="4dp" />
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/UsernameTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="25sp"
+			android:layout_centerHorizontal="true"
+			android:textStyle="bold"
+			android:text="@string/Lbl_Video_call"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+			android:id="@+id/TypecallTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center"
+			android:text="@string/Lbl_Video_call"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="15dp" />
+
+		<WoWonder.Library.Anjo.Call.CallAnswerDeclineButton
+			android:id="@+id/answer_decline_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_gravity="bottom|center"
+			android:layout_margin="36dp"
+			android:gravity="center" />
+
+	</LinearLayout>
+
+</LinearLayout>

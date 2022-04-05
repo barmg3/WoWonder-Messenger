@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+	<string name="Lbl_country1">United States</string>
+	<string name="Lbl_country2">Canada</string>
+	<string name="Lbl_country3">Afghanistan</string>
+	<string name="Lbl_country4">Albania</string>
+	<string name="Lbl_country5">Algeria</string>
+	<string name="Lbl_country6">American Samoa</string>
+	<string name="Lbl_country7">Andorra</string>
+	<string name="Lbl_country8">Angola</string>
+	<string name="Lbl_country9">Anguilla</string>
+	<string name="Lbl_country10">Antarctica</string>
+	<string name="Lbl_country11">Antigua and/or Barbuda</string>
+	<string name="Lbl_country12">Argentina</string>
+	<string name="Lbl_country13">Armenia</string>
+	<string name="Lbl_country14">Aruba</string>
+	<string name="Lbl_country15">Australia</string>
+	<string name="Lbl_country16">Austria</string>
+	<string name="Lbl_country17">Azerbaijan</string>
+	<string name="Lbl_country18">Bahamas</string>
+	<string name="Lbl_country19">Bahrain</string>
+	<string name="Lbl_country20">Bangladesh</string>
+	<string name="Lbl_country21">Barbados</string>
+	<string name="Lbl_country22">Belarus</string>
+	<string name="Lbl_country23">Belgium</string>
+	<string name="Lbl_country24">Belize</string>
+	<string name="Lbl_country25">Benin</string>
+	<string name="Lbl_country26">Bermuda</string>
+	<string name="Lbl_country27">Bhutan</string>
+	<string name="Lbl_country28">Bolivia</string>
+	<string name="Lbl_country29">Bosnia and Herzegovina</string>
+	<string name="Lbl_country30">Botswana</string>
+	<string name="Lbl_country31">Bouvet Island</string>
+	<string name="Lbl_country32">Brazil</string>
+	<string name="Lbl_country34">Brunei Darussalam</string>
+	<string name="Lbl_country35">Bulgaria</string>
+	<string name="Lbl_country36">Burkina Faso</string>
+	<string name="Lbl_country37">Burundi</string>
+	<string name="Lbl_country38">Cambodia</string>
+	<string name="Lbl_country39">Cameroon</string>
+	<string name="Lbl_country40">Cape Verde</string>
+	<string name="Lbl_country41">Cayman Islands</string>
+	<string name="Lbl_country42">Central African Republic</string>
+	<string name="Lbl_country43">Chad</string>
+	<string name="Lbl_country44">Chile</string>
+	<string name="Lbl_country45">China</string>
+	<string name="Lbl_country46">Christmas Island</string>
+	<string name="Lbl_country47">Cocos (Keeling) Islands</string>
+	<string name="Lbl_country48">Colombia</string>
+	<string name="Lbl_country49">Comoros</string>
+	<string name="Lbl_country50">Congo</string>
+	<string name="Lbl_country51">Cook Islands</string>
+	<string name="Lbl_country52">Costa Rica</string>
+	<string name="Lbl_country53">Croatia (Hrvatska)</string>
+	<string name="Lbl_country54">Cuba</string>
+	<string name="Lbl_country55">Cyprus</string>
+	<string name="Lbl_country56">Czech Republic</string>
+	<string name="Lbl_country57">Denmark</string>
+	<string name="Lbl_country58">Djibouti</string>
+	<string name="Lbl_country59">Dominica</string>
+	<string name="Lbl_country60">Dominican Republic</string>
+	<string name="Lbl_country61">East Timor</string>
+	<string name="Lbl_country62">Ecuador</string>
+	<string name="Lbl_country63">Egypt</string>
+	<string name="Lbl_country64">El Salvador</string>
+	<string name="Lbl_country65">Equatorial Guinea</string>
+	<string name="Lbl_country66">Eritrea</string>
+	<string name="Lbl_country67">Estonia</string>
+	<string name="Lbl_country68">Ethiopia</string>
+	<string name="Lbl_country69">Falkland Islands (Malvinas)</string>
+	<string name="Lbl_country70">Faroe Islands</string>
+	<string name="Lbl_country71">Fiji</string>
+	<string name="Lbl_country72">Finland</string>
+	<string name="Lbl_country73">France</string>
+	<string name="Lbl_country74">France, Metropolitan</string>
+	<string name="Lbl_country75">French Guiana</string>
+	<string name="Lbl_country76">French Polynesia</string>
+	<string name="Lbl_country77">French Southern Territories</string>
+	<string name="Lbl_country78">Gabon</string>
+	<string name="Lbl_country79">Gambia</string>
+	<string name="Lbl_country80">Georgia</string>
+	<string name="Lbl_country81">Germany</string>
+	<string name="Lbl_country82">Ghana</string>
+	<string name="Lbl_country83">Gibraltar</string>
+	<string name="Lbl_country84">Greece</string>
+	<string name="Lbl_country85">Greenland</string>
+	<string name="Lbl_country86">Grenada</string>
+	<string name="Lbl_country87">Guadeloupe</string>
+	<string name="Lbl_country88">Guam</string>
+	<string name="Lbl_country89">Guatemala</string>
+	<string name="Lbl_country90">Guinea</string>
+	<string name="Lbl_country91">Guinea-Bissau</string>
+	<string name="Lbl_country92">Guyana</string>
+	<string name="Lbl_country93">Haiti</string>
+	<string name="Lbl_country94">Heard and Mc Donald Islands</string>
+	<string name="Lbl_country95">Honduras</string>
+	<string name="Lbl_country96">Hong Kong</string>
+	<string name="Lbl_country97">Hungary</string>
+	<string name="Lbl_country98">Iceland</string>
+	<string name="Lbl_country99">India</string>
+	<string name="Lbl_country100">Indonesia</string>
+	<string name="Lbl_country101">Iran (Islamic Republic of)</string>
+	<string name="Lbl_country102">Iraq</string>
+	<string name="Lbl_country103">Ireland</string>
+	<string name="Lbl_country104">Israel</string>
+	<string name="Lbl_country105">Italy</string>
+	<string name="Lbl_country106">Ivory Coast</string>
+	<string name="Lbl_country107">Jamaica</string>
+	<string name="Lbl_country108">Japan</string>
+	<string name="Lbl_country109">Jordan</string>
+	<string name="Lbl_country110">Kazakhstan</string>
+	<string name="Lbl_country111">Kenya</string>
+	<string name="Lbl_country112">Kiribati</string>
+	<string name="Lbl_country113">"Korea, Democratic Peoplet&apos;s Republic of"</string>
+	<string name="Lbl_country114">Korea, Republic of</string>
+	<string name="Lbl_country115">Kosovo</string>
+	<string name="Lbl_country116">Kuwait</string>
+	<string name="Lbl_country117">Kyrgyzstan</string>
+	<string name="Lbl_country118">"Lao Peoplet&apos;s Democratic Republic"</string>
+	<string name="Lbl_country119">Latvia</string>
+	<string name="Lbl_country120">Lebanon</string>
+	<string name="Lbl_country121">Lesotho</string>
+	<string name="Lbl_country122">Liberia</string>
+	<string name="Lbl_country123">Libyan Arab Jamahiriya</string>
+	<string name="Lbl_country124">Liechtenstein</string>
+	<string name="Lbl_country125">Lithuania</string>
+	<string name="Lbl_country126">Luxembourg</string>
+	<string name="Lbl_country127">Macau</string>
+	<string name="Lbl_country128">Macedonia</string>
+	<string name="Lbl_country129">Madagascar</string>
+	<string name="Lbl_country130">Malawi</string>
+	<string name="Lbl_country131">Malaysia</string>
+	<string name="Lbl_country132">Maldives</string>
+	<string name="Lbl_country133">Mali</string>
+	<string name="Lbl_country134">Malta</string>
+	<string name="Lbl_country135">Marshall Islands</string>
+	<string name="Lbl_country136">Martinique</string>
+	<string name="Lbl_country137">Mauritania</string>
+	<string name="Lbl_country138">Mauritius</string>
+	<string name="Lbl_country139">Mayotte</string>
+	<string name="Lbl_country140">Mexico</string>
+	<string name="Lbl_country141">Micronesia, Federated States of</string>
+	<string name="Lbl_country142">Moldova, Republic of</string>
+	<string name="Lbl_country143">Monaco</string>
+	<string name="Lbl_country144">Mongolia</string>
+	<string name="Lbl_country145">Montenegro</string>
+	<string name="Lbl_country146">Montserrat</string>
+	<string name="Lbl_country147">Morocco</string>
+	<string name="Lbl_country148">Mozambique</string>
+	<string name="Lbl_country149">Myanmar</string>
+	<string name="Lbl_country150">Namibia</string>
+	<string name="Lbl_country151">Nauru</string>
+	<string name="Lbl_country152">Nepal</string>
+	<string name="Lbl_country153">Netherlands</string>
+	<string name="Lbl_country154">Netherlands Antilles</string>
+	<string name="Lbl_country155">New Caledonia</string>
+	<string name="Lbl_country156">New Zealand</string>
+	<string name="Lbl_country157">Nicaragua</string>
+	<string name="Lbl_country158">Niger</string>
+	<string name="Lbl_country159">Nigeria</string>
+	<string name="Lbl_country160">Niue</string>
+	<string name="Lbl_country161">Norfork Island</string>
+	<string name="Lbl_country162">Northern Mariana Islands</string>
+	<string name="Lbl_country163">Norway</string>
+	<string name="Lbl_country164">Oman</string>
+	<string name="Lbl_country165">Pakistan</string>
+	<string name="Lbl_country166">Palau</string>
+	<string name="Lbl_country167">Panama</string>
+	<string name="Lbl_country168">Papua New Guinea</string>
+	<string name="Lbl_country169">Paraguay</string>
+	<string name="Lbl_country170">Peru</string>
+	<string name="Lbl_country171">Philippines</string>
+	<string name="Lbl_country172">Pitcairn</string>
+	<string name="Lbl_country173">Poland</string>
+	<string name="Lbl_country174">Portugal</string>
+	<string name="Lbl_country175">Puerto Rico</string>
+	<string name="Lbl_country176">Qatar</string>
+	<string name="Lbl_country177">Reunion</string>
+	<string name="Lbl_country178">Romania</string>
+	<string name="Lbl_country179">Russian Federation</string>
+	<string name="Lbl_country180">Rwanda</string>
+	<string name="Lbl_country181">Saint Kitts and Nevis</string>
+	<string name="Lbl_country182">Saint Lucia</string>
+	<string name="Lbl_country183">Saint Vincent and the Grenadines</string>
+	<string name="Lbl_country184">Samoa</string>
+	<string name="Lbl_country185">San Marino</string>
+	<string name="Lbl_country186">Sao Tome and Principe</string>
+	<string name="Lbl_country187">Saudi Arabia</string>
+	<string name="Lbl_country188">Senegal</string>
+	<string name="Lbl_country189">Serbia</string>
+	<string name="Lbl_country190">Seychelles</string>
+	<string name="Lbl_country191">Sierra Leone</string>
+	<string name="Lbl_country192">Singapore</string>
+	<string name="Lbl_country193">Slovakia</string>
+	<string name="Lbl_country194">Slovenia</string>
+	<string name="Lbl_country195">Solomon Islands</string>
+	<string name="Lbl_country196">Somalia</string>
+	<string name="Lbl_country197">South Africa</string>
+	<string name="Lbl_country198">South Georgia South Sandwich Islands</string>
+	<string name="Lbl_country199">Spain</string>
+	<string name="Lbl_country200">Sri Lanka</string>
+	<string name="Lbl_country201">St. Helena</string>
+	<string name="Lbl_country202">St. Pierre and Miquelon</string>
+	<string name="Lbl_country203">Sudan</string>
+	<string name="Lbl_country204">Suriname</string>
+	<string name="Lbl_country205">Svalbarn and Jan Mayen Islands</string>
+	<string name="Lbl_country206">Swaziland</string>
+	<string name="Lbl_country207">Sweden</string>
+	<string name="Lbl_country208">Switzerland</string>
+	<string name="Lbl_country209">Syrian Arab Republic</string>
+	<string name="Lbl_country210">Taiwan</string>
+	<string name="Lbl_country211">Tajikistan</string>
+	<string name="Lbl_country212">Tanzania, United Republic of</string>
+	<string name="Lbl_country213">Thailand</string>
+	<string name="Lbl_country214">Togo</string>
+	<string name="Lbl_country215">Tokelau</string>
+	<string name="Lbl_country216">Tonga</string>
+	<string name="Lbl_country217">Trinidad and Tobago</string>
+	<string name="Lbl_country218">Tunisia</string>
+	<string name="Lbl_country219">Turkey</string>
+	<string name="Lbl_country220">Turkmenistan</string>
+	<string name="Lbl_country221">Turks and Caicos Islands</string>
+	<string name="Lbl_country222">Tuvalu</string>
+	<string name="Lbl_country223">Uganda</string>
+	<string name="Lbl_country224">Ukraine</string>
+	<string name="Lbl_country225">United Arab Emirates</string>
+	<string name="Lbl_country226">United Kingdom</string>
+	<string name="Lbl_country227">United States minor outlying islands</string>
+	<string name="Lbl_country228">Uruguay</string>
+	<string name="Lbl_country229">Uzbekistan</string>
+	<string name="Lbl_country230">Vanuatu</string>
+	<string name="Lbl_country231">Vatican City State</string>
+	<string name="Lbl_country232">Venezuela</string>
+	<string name="Lbl_country233">Vietnam</string>
+	<string name="Lbl_country238">Yemen</string>
+	<string name="Lbl_country239">Yugoslavia</string>
+	<string name="Lbl_country240">Zaire</string>
+	<string name="Lbl_country241">Zambia</string>
+	<string name="Lbl_country242">Zimbabwe</string>
+
+  <string-array name="NiceArtEmojis">
+
+    <!-- Smiles -->
+    <item>u+1f604</item>
+    <item>u+1f603</item>
+    <item>u+1f600</item>
+    <item>u+1f60a</item>
+    <item>u+263a</item>
+    <item>u+1f609</item>
+    <item>u+1f60d</item>
+    <item>u+1f618</item>
+    <item>u+1f61a</item>
+    <item>u+1f617</item>
+    <item>u+1f619</item>
+    <item>u+1f61c</item>
+    <item>u+1f61d</item>
+    <item>u+1f61b</item>
+    <item>u+1f633</item>
+    <item>u+1f601</item>
+    <item>u+1f614</item>
+    <item>u+1f60c</item>
+    <item>u+1f612</item>
+    <item>u+1f61e</item>
+    <item>u+1f623</item>
+    <item>u+1f622</item>
+    <item>u+1f602</item>
+    <item>u+1f62d</item>
+    <item>u+1f62a</item>
+    <item>u+1f625</item>
+    <item>u+1f630</item>
+    <item>u+1f605</item>
+    <item>u+1f613</item>
+    <item>u+1f629</item>
+    <item>u+1f62b</item>
+    <item>u+1f628</item>
+    <item>u+1f631</item>
+    <item>u+1f620</item>
+    <item>u+1f621</item>
+    <item>u+1f624</item>
+
+    <!--People -->
+    <item>u+1f616</item>
+    <item>u+1f606</item>
+    <item>u+1f60b</item>
+    <item>u+1f637</item>
+    <item>u+1f60e</item>
+    <item>u+1f634</item>
+    <item>u+1f635</item>
+    <item>u+1f632</item>
+    <item>u+1f61f</item>
+    <item>u+1f626</item>
+    <item>u+1f627</item>
+    <item>u+1f608</item>
+    <item>u+1f47f</item>
+    <item>u+1f62e</item>
+    <item>u+1f62c</item>
+    <item>u+1f610</item>
+    <item>u+1f615</item>
+    <item>u+1f62f</item>
+    <item>u+1f636</item>
+    <item>u+1f607</item>
+    <item>u+1f60f</item>
+    <item>u+1f611</item>
+    <item>u+1f472</item>
+    <item>u+1f473</item>
+    <item>u+1f46e</item>
+    <item>u+1f477</item>
+    <item>u+1f482</item>
+    <item>u+1f476</item>
+    <item>u+1f466</item>
+    <item>u+1f467</item>
+    <item>u+1f468</item>
+    <item>u+1f469</item>
+    <item>u+1f474</item>
+    <item>u+1f475</item>
+    <item>u+1f471</item>
+    <item>u+1f47c</item>
+    <item>u+1f478</item>
+    <item>u+1f63a</item>
+    <item>u+1f638</item>
+    <item>u+1f63b</item>
+    <item>u+1f63d</item>
+    <item>u+1f63c</item>
+    <item>u+1f640</item>
+    <item>u+1f63f</item>
+    <item>u+1f639</item>
+    <item>u+1f63e</item>
+    <item>u+1f479</item>
+    <item>u+1f47a</item>
+    <item>u+1f648</item>
+    <item>u+1f649</item>
+    <item>u+1f64a</item>
+    <item>u+1f480</item>
+    <item>u+1f47d</item>
+    <item>u+1f4a9</item>
+    <item>u+1f525</item>
+    <item>u+2728</item>
+    <item>u+1f31f</item>
+    <item>u+1f4ab</item>
+    <item>u+1f4a5</item>
+    <item>u+1f4a2</item>
+    <item>u+1f4a6</item>
+    <item>u+1f4a7</item>
+    <item>u+1f4a4</item>
+    <item>u+1f4a8</item>
+    <item>u+1f442</item>
+    <item>u+1f440</item>
+    <item>u+1f443</item>
+    <item>u+1f445</item>
+    <item>u+1f444</item>
+    <item>u+1f44d</item>
+    <item>u+1f44e</item>
+    <item>u+1f44c</item>
+    <item>u+1f44a</item>
+    <item>u+270a</item>
+    <item>u+270c</item>
+    <item>u+1f44b</item>
+    <item>u+270b</item>
+    <item>u+1f450</item>
+    <item>u+1f446</item>
+    <item>u+1f447</item>
+    <item>u+1f449</item>
+    <item>u+1f448</item>
+    <item>u+1f64c</item>
+    <item>u+1f64f</item>
+    <item>u+261d</item>
+    <item>u+1f44f</item>
+    <item>u+1f4aa</item>
+    <item>u+1f6b6</item>
+    <item>u+1f3c3</item>
+    <item>u+1f483</item>
+    <item>u+1f46b</item>
+    <item>u+1f46a</item>
+    <item>u+1f46c</item>
+    <item>u+1f46d</item>
+    <item>u+1f48f</item>
+    <item>u+1f491</item>
+    <item>u+1f46f</item>
+    <item>u+1f646</item>
+    <item>u+1f645</item>
+    <item>u+1f481</item>
+    <item>u+1f64b</item>
+    <item>u+1f486</item>
+    <item>u+1f487</item>
+    <item>u+1f485</item>
+    <item>u+1f470</item>
+    <item>u+1f64e</item>
+    <item>u+1f64d</item>
+    <item>u+1f647</item>
+    <item>u+1f3a9</item>
+    <item>u+1f451</item>
+    <item>u+1f452</item>
+    <item>u+1f45f</item>
+    <item>u+1f45e</item>
+    <item>u+1f461</item>
+    <item>u+1f460</item>
+    <item>u+1f462</item>
+    <item>u+1f455</item>
+    <item>u+1f454</item>
+    <item>u+1f45a</item>
+    <item>u+1f457</item>
+    <item>u+1f3bd</item>
+    <item>u+1f456</item>
+    <item>u+1f458</item>
+    <item>u+1f459</item>
+    <item>u+1f4bc</item>
+    <item>u+1f45c</item>
+    <item>u+1f45d</item>
+    <item>u+1f45b</item>
+    <item>u+1f453</item>
+    <item>u+1f380</item>
+    <item>u+1f302</item>
+    <item>u+1f484</item>
+    <item>u+1f49b</item>
+    <item>u+1f499</item>
+    <item>u+1f49c</item>
+    <item>u+1f49a</item>
+    <item>u+2764</item>
+    <item>u+1f494</item>
+    <item>u+1f497</item>
+    <item>u+1f493</item>
+    <item>u+1f495</item>
+    <item>u+1f496</item>
+    <item>u+1f49e</item>
+    <item>u+1f498</item>
+    <item>u+1f48c</item>
+    <item>u+1f48b</item>
+    <item>u+1f48d</item>
+    <item>u+1f48e</item>
+    <item>u+1f464</item>
+    <item>u+1f465</item>
+    <item>u+1f4ac</item>
+    <item>u+1f463</item>
+    <item>u+1f4ad</item>
+
+    <!--  Nature-->
+    <item>u+1f436</item>
+    <item>u+1f43a</item>
+    <item>u+1f431</item>
+    <item>u+1f42d</item>
+    <item>u+1f439</item>
+    <item>u+1f430</item>
+    <item>u+1f438</item>
+    <item>u+1f42f</item>
+    <item>u+1f428</item>
+    <item>u+1f43b</item>
+    <item>u+1f437</item>
+    <item>u+1f43d</item>
+    <item>u+1f42e</item>
+    <item>u+1f417</item>
+    <item>u+1f435</item>
+    <item>u+1f412</item>
+    <item>u+1f434</item>
+    <item>u+1f411</item>
+    <item>u+1f418</item>
+    <item>u+1f43c</item>
+    <item>u+1f427</item>
+    <item>u+1f426</item>
+    <item>u+1f424</item>
+    <item>u+1f425</item>
+    <item>u+1f423</item>
+    <item>u+1f414</item>
+    <item>u+1f40d</item>
+    <item>u+1f422</item>
+    <item>u+1f41b</item>
+    <item>u+1f41d</item>
+    <item>u+1f41c</item>
+    <item>u+1f41e</item>
+    <item>u+1f40c</item>
+    <item>u+1f419</item>
+    <item>u+1f41a</item>
+    <item>u+1f420</item>
+    <item>u+1f41f</item>
+    <item>u+1f42c</item>
+    <item>u+1f433</item>
+    <item>u+1f40b</item>
+    <item>u+1f404</item>
+    <item>u+1f40f</item>
+    <item>u+1f400</item>
+    <item>u+1f403</item>
+    <item>u+1f405</item>
+    <item>u+1f407</item>
+    <item>u+1f409</item>
+    <item>u+1f40e</item>
+    <item>u+1f410</item>
+    <item>u+1f413</item>
+    <item>u+1f415</item>
+    <item>u+1f416</item>
+    <item>u+1f401</item>
+    <item>u+1f402</item>
+    <item>u+1f432</item>
+    <item>u+1f421</item>
+    <item>u+1f40a</item>
+    <item>u+1f42b</item>
+    <item>u+1f42a</item>
+    <item>u+1f406</item>
+    <item>u+1f408</item>
+    <item>u+1f429</item>
+    <item>u+1f43e</item>
+    <item>u+1f490</item>
+    <item>u+1f338</item>
+    <item>u+1f337</item>
+    <item>u+1f340</item>
+    <item>u+1f339</item>
+    <item>u+1f33b</item>
+    <item>u+1f33a</item>
+    <item>u+1f341</item>
+    <item>u+1f343</item>
+    <item>u+1f342</item>
+    <item>u+1f33f</item>
+    <item>u+1f33e</item>
+    <item>u+1f344</item>
+    <item>u+1f335</item>
+    <item>u+1f334</item>
+    <item>u+1f332</item>
+    <item>u+1f333</item>
+    <item>u+1f330</item>
+    <item>u+1f331</item>
+    <item>u+1f33c</item>
+    <item>u+1f310</item>
+    <item>u+1f31e</item>
+    <item>u+1f31d</item>
+    <item>u+1f31a</item>
+    <item>u+1f311</item>
+    <item>u+1f312</item>
+    <item>u+1f313</item>
+    <item>u+1f314</item>
+    <item>u+1f315</item>
+    <item>u+1f316</item>
+    <item>u+1f317</item>
+    <item>u+1f318</item>
+    <item>u+1f31c</item>
+    <item>u+1f31b</item>
+    <item>u+1f319</item>
+    <item>u+1f30d</item>
+    <item>u+1f30e</item>
+    <item>u+1f30f</item>
+    <item>u+1f30b</item>
+    <item>u+1f30c</item>
+    <item>u+1f320</item>
+    <item>u+2b50</item>
+    <item>u+2600</item>
+    <item>u+26c5</item>
+    <item>u+2601</item>
+    <item>u+26a1</item>
+    <item>u+2614</item>
+    <item>u+2744</item>
+    <item>u+26c4</item>
+    <item>u+1f300</item>
+    <item>u+1f301</item>
+    <item>u+1f308</item>
+    <item>u+1f30a</item>
+
+    <!--Places-->
+    <item>u+1f3e0</item>
+    <item>u+1f3e1</item>
+    <item>u+1f3eb</item>
+    <item>u+1f3e2</item>
+    <item>u+1f3e3</item>
+    <item>u+1f3e5</item>
+    <item>u+1f3e6</item>
+    <item>u+1f3ea</item>
+    <item>u+1f3e9</item>
+    <item>u+1f3e8</item>
+    <item>u+1f492</item>
+    <item>u+26ea</item>
+    <item>u+1f3ec</item>
+    <item>u+1f3e4</item>
+    <item>u+1f307</item>
+    <item>u+1f306</item>
+    <item>u+1f3ef</item>
+    <item>u+1f3f0</item>
+    <item>u+26fa</item>
+    <item>u+1f3ed</item>
+    <item>u+1f5fc</item>
+    <item>u+1f5fe</item>
+    <item>u+1f5fb</item>
+    <item>u+1f304</item>
+    <item>u+1f305</item>
+    <item>u+1f303</item>
+    <item>u+1f5fd</item>
+    <item>u+1f309</item>
+    <item>u+1f3a0</item>
+    <item>u+1f3a1</item>
+    <item>u+26f2</item>
+    <item>u+1f3a2</item>
+    <item>u+1f6a2</item>
+    <item>u+26f5</item>
+    <item>u+1f6a4</item>
+    <item>u+1f6a3</item>
+    <item>u+2693</item>
+    <item>u+1f680</item>
+    <item>u+2708</item>
+    <item>u+1f4ba</item>
+    <item>u+1f681</item>
+    <item>u+1f682</item>
+    <item>u+1f68a</item>
+    <item>u+1f689</item>
+    <item>u+1f69e</item>
+    <item>u+1f686</item>
+    <item>u+1f684</item>
+    <item>u+1f685</item>
+    <item>u+1f688</item>
+    <item>u+1f687</item>
+    <item>u+1f69d</item>
+    <item>u+1f68b</item>
+    <item>u+1f683</item>
+    <item>u+1f68e</item>
+    <item>u+1f68c</item>
+    <item>u+1f68d</item>
+    <item>u+1f699</item>
+    <item>u+1f698</item>
+    <item>u+1f697</item>
+    <item>u+1f695</item>
+    <item>u+1f696</item>
+    <item>u+1f69b</item>
+    <item>u+1f69a</item>
+    <item>u+1f6a8</item>
+    <item>u+1f693</item>
+    <item>u+1f694</item>
+    <item>u+1f692</item>
+    <item>u+1f691</item>
+    <item>u+1f690</item>
+    <item>u+1f6b2</item>
+    <item>u+1f6a1</item>
+    <item>u+1f69f</item>
+    <item>u+1f6a0</item>
+    <item>u+1f69c</item>
+    <item>u+1f488</item>
+    <item>u+1f68f</item>
+    <item>u+1f3ab</item>
+    <item>u+1f6a6</item>
+    <item>u+1f6a5</item>
+    <item>u+26a0</item>
+    <item>u+1f6a7</item>
+    <item>u+1f530</item>
+    <item>u+26fd</item>
+    <item>u+1f3ee</item>
+    <item>u+1f3b0</item>
+    <item>u+2668</item>
+    <item>u+1f5ff</item>
+    <item>u+1f3aa</item>
+    <item>u+1f3ad</item>
+    <item>u+1f4cd</item>
+    <item>u+1f6a9</item>
+  </string-array>
+ 
+</resources>

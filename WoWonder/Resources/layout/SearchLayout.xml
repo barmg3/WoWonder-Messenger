@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            app:popupTheme="@style/PopupMenuStyle"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill">
+          <AutoCompleteTextView
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTint="@color/accent"
+            android:textColor="@color/accent"
+            android:textColorHint="@color/accent"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/Lbl_Search"
+            android:textSize="19dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:layout_margin="10.2dp"
+            android:drawablePadding="13dp" />
+          <!--<androidx.appcompat.widget.SearchView
+                android:id="@+id/searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:theme="@style/SearchViewTheme"
+                android:queryHint="@string/Lbl_Search"
+                android:layout_weight="1"
+                android:translationX="-4dp"
+                app:iconifiedByDefault="false"
+                android:textSize="16sp"
+                android:layout_marginEnd="9dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="0dp" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyler"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ViewStub
+            android:id="@+id/viewStub"
+            android:inflatedId="@+id/subView"
+            android:layout_marginTop="0dp"
+            android:layout_centerInParent="true"
+            android:layout="@layout/EmptyStateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:id="@+id/sectionProgress"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:id="@+id/floatingActionButtonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:clickable="true"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:rippleColor="@android:color/transparent"
+            android:src="@drawable/ic_action_filter"
+            app:tint="@color/gnt_white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            app:backgroundTint="@color/primary"
+            android:layout_marginBottom="40dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="4dp"
+                android:id="@+id/main"
+                android:paddingEnd="2dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/chat_rounded_left_layout"
+        android:id="@+id/bubble_layout"
+        android:gravity="start|center"
+        android:layout_gravity="start|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="?attr/colorFill"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <include
+	        android:id="@+id/ForwardLayout"
+	        layout="@layout/ForwardMessageViewLayout" 
+	        android:visibility="gone" /> 
+        
+        <include
+	        android:id="@+id/replied_message_view"
+	        layout="@layout/RepliedMessageViewLayout" 
+	        android:visibility="gone" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical">
+            <refractored.controls.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_marginStart="15dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/textLight_color"
+                android:layout_weight="2"
+                android:src="@drawable/no_profile_image" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contactName"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberText"
+                    android:layout_weight="2"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginStart="8dp"
+          android:layout_centerInParent="true"
+          android:gravity="center"  
+          android:layout_gravity="center">
+          <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/starIcon"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:lottie_loop="false"
+            android:layout_centerInParent="true"
+            app:lottie_fileName="FavAnim.json" />
+          <ImageView
+            android:id="@+id/fav"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_fav_post_vector"
+            android:gravity="center" 
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="2dp" />
+        </RelativeLayout> 
+    </LinearLayout>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/countLikeSection"
+    android:layout_alignEnd="@+id/bubble_layout"
+    android:layout_below="@+id/bubble_layout"
+    android:layout_width="wrap_content" 
+    android:clickable="true"
+    android:translationY="-5dp"
+    android:visibility="gone"
+    android:gravity="center"
+    android:backgroundTint="?attr/colorFill"
+    android:background="@drawable/shape_radius_btn"
+    android:layout_height="20dp">
+    <ImageView
+      android:id="@+id/ImagecountLike"
+      android:layout_width="16dp"
+      android:layout_height="16dp"
+      android:src="@drawable/emoji_love"
+      android:layout_margin="5dp"
+      android:scaleType="centerCrop" />
+  </LinearLayout>
+  <TextView
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/bubble_layout"
+    android:layout_below="@+id/bubble_layout"
+    android:id="@+id/time"
+    android:textColor="#444"
+    android:textSize="10dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="3dp"
+    android:gravity="bottom|start" 
+    android:text="01:12 PM"
+    android:visibility="gone"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="wrap_content"
+    android:translationX="0dp"
+    android:paddingBottom="2dp" /> 
+</RelativeLayout>

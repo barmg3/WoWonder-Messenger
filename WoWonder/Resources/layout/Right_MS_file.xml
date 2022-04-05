@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="4dp"
+                android:id="@+id/main"
+                android:paddingEnd="2dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bubble_layout"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_rounded_right_layout">
+        <include
+	        android:id="@+id/ForwardLayout"
+	        layout="@layout/ForwardMessageViewLayout" 
+	        android:visibility="gone" /> 
+        
+        <include
+	        android:id="@+id/replied_message_view"
+	        layout="@layout/RepliedMessageViewLayout" 
+	        android:visibility="gone" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp">
+            <TextView
+                android:id="@+id/Icontypefile"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textLight_color"
+                android:textSize="35sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fileName"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/textLight_color"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sizefileText"
+                    android:layout_weight="2"
+                    android:textColor="@color/textLight_color"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:layout_weight="2"
+                android:textColor="@color/textLight_color"
+                android:textSize="11dp"
+                android:text="10:00 PM"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="11dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/starIcon"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    app:lottie_loop="false"
+                    android:layout_centerInParent="true"
+                    app:lottie_fileName="FavAnim.json" />
+                <ImageView
+                    android:id="@+id/fav"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_fav_post_vector"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seen"
+                android:layout_weight="1"
+                android:text="Ic"
+                android:textColor="@color/textLight_color"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/countLikeSection"
+    android:layout_alignStart="@+id/bubble_layout"
+    android:layout_below="@+id/bubble_layout"
+    android:layout_width="wrap_content" 
+    android:visibility="gone"
+    android:clickable="true"
+    android:translationY="-5dp"
+    android:gravity="center"
+    android:backgroundTint="?attr/colorFill"
+    android:background="@drawable/shape_radius_btn"
+    android:layout_height="20dp">
+    <ImageView
+      android:id="@+id/ImagecountLike"
+      android:layout_width="16dp"
+      android:layout_height="16dp"
+      android:src="@drawable/emoji_love"
+      android:layout_margin="5dp"
+      android:scaleType="centerCrop" />
+  </LinearLayout>
+</RelativeLayout>

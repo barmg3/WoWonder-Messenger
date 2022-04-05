@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false" 
+    android:descendantFocusability="blocksDescendants"
+    android:paddingStart="5dp">
+    <TextView
+      android:hyphenationFrequency="none"
+      android:id="@+id/headText"
+      android:inputType="textMultiLine"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="12dp"
+      android:layout_marginEnd="25dp" 
+      android:layout_alignParentTop="true"
+      android:textSize="14sp" 
+      android:textStyle="bold"
+      android:textAllCaps="true"
+      android:maxLines="1"
+      android:lineSpacingExtra="3dp"
+      android:paddingTop="7dp"
+      android:paddingBottom="7dp" />
+    <TextView
+      android:id="@+id/moreText"
+      android:layout_width="wrap_content"
+      android:layout_height="25dp"
+      android:textSize="12sp"
+      android:layout_marginTop="0dp"
+      android:textColor="@color/text_color_in_between"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:paddingStart="4dp"
+      android:paddingEnd="4dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="2dp"
+      android:layout_marginEnd="8dp"
+      android:visibility="visible"/> 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/headText"
+        android:id="@+id/Recyler"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:scrollbars="vertical"
+        android:layout_marginEnd="0dp" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="5dp"
+      android:background="?attr/colorDivider"
+      android:layout_below="@+id/Recyler" />
+</RelativeLayout>

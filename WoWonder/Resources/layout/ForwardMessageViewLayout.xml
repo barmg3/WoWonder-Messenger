@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ForwardLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+  <ImageView
+    android:id="@+id/ForwardIcon"
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:src="@drawable/icon_forward_vector"
+    android:tint="#888888" 
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:gravity="center" />
+
+  <TextView
+    android:id="@+id/ForwardText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/Lbl_Forwarded"
+    android:textColor="#888888"
+    android:textStyle="italic"
+    android:gravity="start|center" 
+    android:textSize="12sp"  />
+
+</LinearLayout>

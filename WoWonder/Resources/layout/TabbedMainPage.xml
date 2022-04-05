@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="?attr/colorPrimary"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/PopupMenuStyle"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/accent"
+                    android:textSize="20dp"
+                    android:id="@+id/appName"
+                    android:text="WoWonder Messenger"
+					android:translationX="-10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/discoverButton"
+                    android:src="@drawable/ic_place_vector"
+                    android:background="@drawable/custom_ripple"
+                    android:tint="?attr/colorHint"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/moreButton"
+                    android:background="@drawable/custom_ripple"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="90"
+                    android:layout_marginEnd="8dp"
+                    android:tint="?attr/colorHint"
+                    android:src="@drawable/icon_more_dots_vector"
+                    android:layout_centerVertical="true"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+                <ImageView
+                    android:id="@+id/searchButton"
+                    android:background="@drawable/custom_ripple"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/moreButton"
+                    android:tint="?attr/colorHint"
+                    android:src="@drawable/icon_search_vector"
+                    android:layout_centerVertical="true"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabsLayout"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:background="?attr/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="end|bottom"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginBottom="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/FloatingAction"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/circlegradient">
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:tint="@color/textLight_color"
+                android:src="@drawable/icon_profile_vector"
+                android:gravity="center" />
+        </FrameLayout>
+        <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:clickable="true"
+            app:elevation="6dp"
+            app:fabSize="mini"
+            android:layout_marginEnd="9dp"
+            android:layout_marginStart="9dp"
+            app:pressedTranslationZ="12dp"
+            app:rippleColor="@android:color/transparent"
+            android:src="@drawable/ic_filter"
+            android:tint="#444"
+            app:backgroundTint="#efefef"
+            android:layout_marginBottom="10dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:clickable="true"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:rippleColor="@android:color/transparent"
+            android:src="@drawable/ic_contacts"
+            app:backgroundTint="@color/accent"
+            android:layout_marginBottom="20dp" />-->
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<WoWonder.NiceArt.NiceArtEditorView
+			android:id="@+id/imgColorView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+	        android:paddingBottom="0dp"
+		    android:gravity="center"
+	        android:layout_gravity="center" />
+
+		<WoWonder.Library.Anjo.AutoEditText.AutoFitEditText
+			android:id="@+id/rEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/transparent"
+	        android:textColor="@color/textLight_color"
+            android:textColorHint="@color/textLight_color"
+            android:maxLength="1000"
+            android:maxLines="4"
+	        android:hint="@string/Lbl_Tap_To_Type"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:layout_centerInParent="true"
+            android:padding="8dp" 
+            android:textSize="44sp" /> 
+
+	<LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textLight_color"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal|bottom"
+        android:layout_gravity="center_horizontal|bottom"
+	    android:orientation="vertical" >
+	   	  
+	 <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fontTypeFace_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            android:background="@android:color/black"
+            tools:listitem="@layout/Style_FontTypeFaceView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/add_text_color_picker_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            android:background="@android:color/black"
+            tools:listitem="@layout/Style_ColorPickerView" />
+
+		</LinearLayout>  
+	 
+	<LinearLayout
+			android:id="@+id/Headerview"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:orientation="horizontal"
+			android:background="#80000000">
+	 
+			<ImageView
+	 			android:id="@+id/imgClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20sp"	
+                android:src="@drawable/icon_close_vector"	
+	            android:tint="@color/gnt_white"
+	 	    	android:gravity="center_vertical"/>
+	 	    
+		<RelativeLayout
+	 		 android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+			android:orientation="horizontal"
+	 		 android:gravity="end"
+	 		 android:layout_gravity="end" >
+	 	
+			 <TextView
+                android:id="@+id/imgSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	 			android:padding="10dp"
+                android:textColor="@color/textLight_color"
+                android:text="@string/Lbl_Save"
+			    android:textSize="16sp" />
+			
+		</RelativeLayout>
+		 
+	</LinearLayout>  
+
+	<LinearLayout
+			android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_gravity="left|center_vertical"
+		    android:gravity="left|center_vertical"
+		    android:layout_marginTop="10dp" 
+		    android:layout_marginStart="20dp" >
+		    
+		    <TextView
+		    	android:id="@+id/txtColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+			    android:textColor="@color/textLight_color"
+                android:text="@string/Lbl_Color"
+			    android:textSize="18sp"
+			    android:gravity="center_vertical"
+		    	android:paddingTop="3dp"
+		    	android:layout_marginStart="30dp"
+		    	android:layout_marginEnd="10dp" />
+		    	
+		</LinearLayout>  
+
+</RelativeLayout>

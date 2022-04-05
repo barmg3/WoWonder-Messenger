@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:background="?attr/colorFill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:popupTheme="@style/PopupMenuStyle"
+            android:layout_gravity="top"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler"
+        android:background="?attr/colorFill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:scrollbars="vertical" 
+        android:clipToPadding="false"
+        android:padding="5dp"
+        android:scrollingCache="true" />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/social_bg_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/Lbl_Read"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/timeRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="3dp"
+                android:textColor="#888"
+                android:textSize="13dp"
+                android:text="----" />
+        </LinearLayout>
+      <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorDivider"
+        android:layout_margin="5dp" />
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical">
+        <TextView
+          android:id="@+id/tvDelivered"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:singleLine="true"
+          android:text="@string/Lbl_Delivered"
+          android:textSize="16dp" />
+        <TextView
+          android:id="@+id/timeDelivered"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:singleLine="true"
+          android:layout_marginTop="3dp"
+          android:textColor="#888"
+          android:textSize="13dp"
+          android:text="----" />
+      </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

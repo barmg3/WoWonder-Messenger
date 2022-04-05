@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <!--add your website without http >> demo.wowonder.com-->
+  <string name="ApplicationUrlWeb">metacryptosocial.com</string>
+
+  <!-- #warning about new privacy on google AdMob...
+	should add file app-ads.txt in the server >>this content file text https://prnt.sc/vm086w
+	and the link should example: https://www.demo.com/app-ads.txt -->
+  <!--ADMOB APPLICATION_ID >> ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy-->
+
+  <string name="admob_app_id">ca-app-pub-5135691635931982~1957332004</string>
+	<string name="banner_ad_unit_id">ca-app-pub-5135691635931982/8411893862</string>
+	<string name="banner_multiple_ad_sizes_id">ca-app-pub-5135691635931982/3634209906</string>
+	<string name="ad_attribution">Ad</string>
+	<!--===============================================================-->
+
+	<!--facebook ID-->
+	<string name="facebook_app_id">666409874051654</string>
+	<string name="fb_login_protocol_scheme">fb666409874051654</string>
+	<string name="icon_desc">Ad icon</string>
+	<string name="image_desc">Ad image</string>
+	<string name="sponsored">Sponsored</string>
+	<!--===============================================================-->
+
+	<!--google ID >> Google Login - Map - YouTube Player  https://prnt.sc/vysrsw -->
+	<string name="google_key">AIzaSyB9hBrJwdQM3oycf_j-53XKrG-hxW9rYt0</string>
+
+	<!--https://developers.google.com/maps/documentation/maps-static/intro-->
+	<string name="google_maps_key">AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM</string>
+
+</resources>
