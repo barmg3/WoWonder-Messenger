@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+	<TextView
+        android:id="@+id/txtNiceArtClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:elevation="1dp"
+	    android:textSize="16sp"
+        android:textColor="@color/textLight_color"
+		android:text="X"
+	     />
+
+	<TextView
+        android:id="@+id/txtNiceArtEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+		android:visibility="invisible"
+        android:elevation="1dp"
+		android:textSize="15sp"
+        android:textColor="@color/textLight_color"
+		android:text="E"
+	     /> 
+	
+    <FrameLayout
+        android:id="@+id/frmBorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_margin="10dp">
+
+		<TextView
+              android:id="@+id/tvNiceArtText"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="0dp"
+			  android:text="wael"
+			  android:layout_margin="4dp"
+              android:textColor="@android:color/white"
+              android:textSize="20sp"/>
+
+    </FrameLayout> 
+</FrameLayout>

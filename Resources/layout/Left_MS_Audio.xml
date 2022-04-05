@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:id="@+id/main"
+                android:paddingEnd="2dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/chat_rounded_left_layout"
+        android:id="@+id/bubble_layout"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="80dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/accent"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <include
+	        android:id="@+id/ForwardLayout"
+	        layout="@layout/ForwardMessageViewLayout" 
+	        android:visibility="gone" /> 
+        
+        <include
+	        android:id="@+id/replied_message_view"
+	        layout="@layout/RepliedMessageViewLayout" 
+	        android:visibility="gone" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="65dp">
+            <RelativeLayout
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <at.markushi.ui.CircleButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cb_color="?attr/colorFill"
+                    app:cb_pressedRingWidth="0dip"
+                    android:tint="?attr/colorAccent"
+                    android:src="@drawable/icon_play_vector"
+                    android:id="@+id/playButton"
+                    android:tag="Play"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+                <ProgressBar
+                    android:id="@+id/loadingProgressview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginStart="1dp"
+                    android:indeterminateTint="?attr/colorAccent"
+                    android:indeterminate="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+	            <androidx.appcompat.widget.AppCompatSeekBar
+		            android:id="@+id/seek_song_progressbar"
+		            android:layout_width="match_parent"
+		            android:layout_height="40dp"
+		            android:progress="0"
+		            android:progressTint="#ff000000"
+		            android:secondaryProgressTint="#cccccc"
+		            android:indeterminateTint="#ffffa500"
+		            android:progressBackgroundTint="#ff000000"
+		            android:thumbTint="@color/accent"
+		            android:theme="@style/MySeekBar" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Duration"
+                        android:textSize="11dp"
+                        android:text="00:00"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:layout_gravity="start|center" />
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/time"
+                        android:textSize="11dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="end|center"
+                        android:layout_gravity="end|center" />
+                    <RelativeLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_marginStart="2dp">
+                      <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/starIcon"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        app:lottie_loop="false"
+                        android:layout_centerInParent="true"
+                        app:lottie_fileName="FavAnim.json" />
+                      <ImageView
+                        android:id="@+id/fav"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_fav_post_vector"
+                        android:gravity="center" 
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"  />
+                    </RelativeLayout> 
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/countLikeSection"
+    android:layout_alignEnd="@+id/bubble_layout"
+    android:layout_below="@+id/bubble_layout"
+    android:layout_width="wrap_content" 
+    android:clickable="true"
+    android:translationY="-5dp"
+    android:visibility="gone"
+    android:gravity="center"
+    android:backgroundTint="?attr/colorFill"
+    android:background="@drawable/shape_radius_btn"
+    android:layout_height="20dp">
+    <ImageView
+      android:id="@+id/ImagecountLike"
+      android:layout_width="16dp"
+      android:layout_height="16dp"
+      android:src="@drawable/emoji_love"
+      android:layout_margin="5dp"
+      android:scaleType="centerCrop" />
+  </LinearLayout>
+</RelativeLayout>

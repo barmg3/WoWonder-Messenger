@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorFill">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:background="?attr/colorFill">
+            <RelativeLayout
+                android:id="@+id/secoundrelative"
+                android:layout_width="match_parent"
+                android:layoutDirection="ltr"
+                android:layout_height="250dp">
+                <com.github.florent37.diagonallayout.DiagonalLayout
+                    android:id="@+id/diagonalLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_alignParentStart="true"
+                    android:elevation="10dp"
+                    app:diagonal_angle="10"
+                    android:layoutDirection="ltr"
+                    app:diagonal_position="top"
+                    app:diagonal_direction="right">
+                    <ImageView
+                        android:id="@+id/coverImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/Cover_image" />
+                    <TextView
+                        android:id="@+id/Txt_fullname"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/textLight_color"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_centerInParent="true" />
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_height="40dp" 
+                        android:layout_width="match_parent"
+                        android:textColor="@color/textLight_color"
+                        android:textSize="17dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="85dp"
+                        android:layout_centerInParent="true" />
+                </com.github.florent37.diagonallayout.DiagonalLayout>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layoutDirection="ltr"
+                android:src="@drawable/no_profile_image_circle"
+                android:layout_alignBottom="@id/secoundrelative"
+                android:layout_alignParentStart="true" />
+            <at.markushi.ui.CircleButton
+                android:id="@+id/Edit_button"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                app:cb_color="#282828"
+                app:cb_pressedRingWidth="5dip"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:layout_alignBottom="@id/secoundrelative"
+                android:layout_marginBottom="60dp"
+                android:layout_marginEnd="9dp"
+                android:src="@drawable/ic_edit"
+                android:layout_alignParentEnd="true" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layoutDirection="ltr"
+                android:translationX="35dp">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/secoundrelative"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp">
+                    <TextView
+                        android:id="@+id/Txt_flowersView"
+                        android:text="@string/Lbl_Followers"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorFill"
+                        android:textSize="10dp"
+                        android:layout_alignBottom="@id/secoundrelative"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:id="@+id/Txt_flowers_count"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorFill"
+                        android:textSize="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="start" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    android:layoutDirection="ltr"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/secoundrelative"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+                    <TextView
+                        android:id="@+id/flowinglabelView"
+                        android:text="@string/Lbl_Following"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorFill"
+                        android:textSize="10dp"
+                        android:layout_alignBottom="@id/secoundrelative"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:id="@+id/Txt_flowing_countView"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorFill"
+                        android:textSize="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="start" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/secoundrelative"
+                android:layout_marginTop="10dp">
+                <WoWonder.Library.Anjo.SuperTextLibrary.SuperTextView
+                    android:id="@+id/Txt_AboutUser"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:visibility="invisible"
+                    android:background="?attr/colorFill"
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:popupTheme="@style/PopupMenuStyle"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                android:background="@null" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/Lbl_User_Info"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:background="?attr/colorFill" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/section1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/secoundrelative"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/name_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+				<EditText
+					android:id="@+id/FirstName_text"
+					style="@style/EditTextNormalStyle"
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:hint="@string/Lbl_FirstName"
+					android:textSize="15sp"
+					android:gravity="start"
+					android:inputType="textEmailAddress"
+					android:background="@drawable/EditTextStyleOne"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="3dp" /> 
+				<EditText
+					android:id="@+id/LastName_text"
+					style="@style/EditTextNormalStyle"
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:hint="@string/Lbl_LastName"
+					android:textSize="15sp"
+					android:gravity="start"
+					android:inputType="textEmailAddress"
+					android:background="@drawable/EditTextStyleOne"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="3dp" /> 
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/genderLiner"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/gender_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+	            android:id="@+id/gender_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Gender"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/locationLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/location_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+	            android:id="@+id/location_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Location"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mobileLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/mobile_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+	            android:id="@+id/mobile_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Mobile"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/websiteLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/website_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+	            android:id="@+id/website_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Website"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/workLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/work_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+            <EditText
+	            android:id="@+id/work_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Workplace"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="@string/Lbl_Social_Links"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:background="?attr/colorFill"
+                android:id="@+id/textView1" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/facebookLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/facebook_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+ 
+            <EditText
+	            android:id="@+id/facebook_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Facebook"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/TwitterLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/Twitter_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+	            android:id="@+id/Twitter_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Twitter"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/VKLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/VK_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+	            android:id="@+id/VK_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_VK"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/InstagramLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/Instagram_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+	            android:id="@+id/Instagram_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Instagram"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/YoutubeLiner"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/Youtube_icon"
+                android:text="I"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_width="50dp"
+                android:layout_gravity="start"
+                android:padding="15dp"
+                android:layout_marginStart="5dp" />
+ 
+            <EditText
+	            android:id="@+id/Youtube_text"
+	            style="@style/EditTextNormalStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:hint="@string/Lbl_Youtube"
+	            android:textSize="15sp"
+	            android:gravity="start"
+	            android:inputType="textEmailAddress"
+	            android:background="@drawable/EditTextStyleOne"
+	            android:layout_alignParentEnd="true"
+	            android:layout_marginStart="3dp" />
+ 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp">
+	        <com.google.android.gms.ads.doubleclick.PublisherAdView
+		        android:id="@+id/multiple_ad_sizes_view"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        app:adSize="MEDIUM_RECTANGLE,120x20,250x250,320x100,SMART_BANNER"
+		        app:adUnitId="@string/banner_multiple_ad_sizes_id" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

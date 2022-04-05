@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="1dp"
+    android:paddingEnd="1dp"
+    android:minHeight="100dp"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp"
+    android:gravity="center|center_horizontal"
+    android:foregroundGravity="center">
+  <ImageView
+    android:id="@+id/Image"
+    android:transitionName="sharedImage"
+    android:scaleType="centerCrop"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:adjustViewBounds="true"
+    android:foreground="@drawable/custom_ripple"
+    android:src="@drawable/imageplacholder"
+    android:focusable="true"
+    android:clickable="false"
+    android:gravity="center"
+    android:layout_centerVertical="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeicon"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textLight_color"
+        android:visibility="gone"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playicon"
+        android:textSize="26sp"
+        android:textColor="@color/textLight_color"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

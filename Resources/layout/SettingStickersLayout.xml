@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:fitsSystemWindows="true"
+	android:layout_width="match_parent"
+	android:background="@drawable/rounded_dialog"
+	android:backgroundTint="?attr/ShapeCircleColor6"
+	android:layout_height="wrap_content">
+	<!--Head Page -->
+	<LinearLayout
+		android:id="@+id/mainLayout"
+		android:layout_width="match_parent"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:layout_height="20dp">
+		<View
+			android:layout_width="80dp"
+			android:layout_height="4dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:background="?attr/colorDivider" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:background="@drawable/Shape_Radius_Btn"
+		android:orientation="horizontal">
+		<AutoCompleteTextView
+			android:id="@+id/searchBox"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:background="@null" 
+			android:layout_gravity="center_vertical"
+			android:hint="@string/Lbl_SearchTrendingStickers" 
+			android:textSize="13dp"
+			android:drawableStart="@drawable/icon_search_vector"
+			android:drawableTint="#888888"
+			android:drawablePadding="13dp"
+			android:singleLine="true"
+			android:imeOptions="actionSearch"
+			android:layout_margin="10.2dp" /> 
+		<ImageView
+			android:id="@+id/closeIcon"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:clickable="true"
+			android:padding="10dp"
+			android:layout_gravity="center_vertical"
+			android:scaleType="fitCenter"
+			android:src="@drawable/icon_close_vector" />
+	</LinearLayout>
+	<com.google.android.material.tabs.TabLayout
+		android:id="@+id/tabs"
+		android:background="?attr/ShapeCircleColor6"
+		app:tabTextColor="@android:color/black" 
+		app:tabSelectedTextColor="@color/primary"
+		app:tabMode="fixed"
+		app:tabGravity="fill"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+	<androidx.viewpager2.widget.ViewPager2
+		android:id="@+id/viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="?android:attr/actionBarSize"/>
+</LinearLayout>

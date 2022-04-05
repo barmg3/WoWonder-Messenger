@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="130dp"
+    android:layout_height="150dp"
+	android:padding="5dp"
+    android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/ImageLayout"
+        android:layout_width="105dp"
+        android:layout_height="120dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/Image"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:src="@drawable/no_profile_image_circle"
+            android:layout_centerVertical="false" />
+    </RelativeLayout>
+    <at.markushi.ui.CircleButton
+        android:id="@+id/ImageCircle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:cb_pressedRingWidth="2dip"
+        android:src="@drawable/icon_close_vector"
+        android:layout_alignTop="@id/Image"
+        android:layout_alignParentEnd="true"
+        app:cb_color="#ffff7043"
+        android:layout_alignWithParentIfMissing="false" />
+	<TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ImageLayout"
+		android:gravity="center"
+		android:layout_gravity="center"
+        
+		
+        android:textSize="14sp"
+		android:lines ="1"
+		android:maxLines="1" />
+</RelativeLayout>

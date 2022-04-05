@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:id="@+id/pin_message_view"
+    android:background="?attr/selectableItemBackground" 
+    android:orientation="vertical"> 
+       
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="?attr/colorFill"
+        android:orientation="horizontal">  
+
+        <View
+            android:id="@+id/color_view" 
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/accent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp"
+				android:text="@string/Lbl_PinnedMessage"
+		        android:textSize="16sp"
+		        android:textColor="@color/accent" />
+
+            <TextView
+                android:id="@+id/short_pin_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textSize="14sp"
+                android:maxLines="2"/>
+
+        </LinearLayout>
+          
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|top"
+            android:background="@drawable/bg_item_round_ripple"
+			android:tint="?attr/colorHint"
+            android:clickable="true"
+            android:padding="2dp" 
+			android:layout_margin="5dp"
+            android:visibility="visible" 
+            android:src="@drawable/icon_list_vector" />
+
+    </LinearLayout>
+
+</LinearLayout>

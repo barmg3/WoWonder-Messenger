@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@xml/react_dialog_shape"
+    android:paddingBottom="30dp"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/CloseButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_close_vector"
+            android:tint="@color/text_color_in_between"
+            android:padding="8dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="3dp" />
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/map" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Lbl_AllowYourLocation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/accent"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/accent" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Lbl_DescriptionAllowYourLocation"
+                android:textSize="15sp"
+                android:textColor="@color/text_color_in_between" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enableButton"
+                android:background="@drawable/follow_button_profile_friends_pressed"
+                android:layout_height="36dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="@string/Lbl_Enable" 
+                android:textColor="@color/textLight_color"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:id="@+id/notNowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/Lbl_NotNow"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/accent"
+                android:textAllCaps="true"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

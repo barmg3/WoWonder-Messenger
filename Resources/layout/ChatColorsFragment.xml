@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"> 
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"> 
+		<androidx.gridlayout.widget.GridLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="?attr/colorFill"
+			app:columnCount="5"
+			app:useDefaultMargins="false"
+			app:rowCount="3"
+			android:padding="4dp">
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton1"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#b582af"
+				android:tag="#b582af"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="1" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton2"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="@color/accent"
+				android:tag="@color/accent"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_rowWeight="1"
+				app:layout_columnWeight="1" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton3"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#f9c270"
+				android:tag="#f9c270"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="1" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton4"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#70a0e0"
+				android:tag="#70a0e0"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="1" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton5"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#56c4c5"
+				android:tag="#56c4c5"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="1" />
+			<!--<Secound Line of colors >-->
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton6"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#f33d4c"
+				android:tag="#f33d4c"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="2" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton7"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#a1ce79"
+				android:tag="#a1ce79"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="2" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton8"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#a085e2"
+				android:tag="#a085e2"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="2" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton9"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#ed9e6a"
+				android:tag="#ed9e6a"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="2" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton10"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#f2812b"
+				android:tag="#f2812b"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="2" />
+			<!--<Third Line of colors >-->
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton11"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#0ba05d"
+				android:tag="#0ba05d"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="3" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton12"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#0e71ea"
+				android:tag="#0e71ea"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="3" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton13"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#aa2294"
+				android:tag="#aa2294"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="3" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/colorbutton14"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#2b87ce"
+				android:tag="#2b87ce"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="2" />
+			<at.markushi.ui.CircleButton
+				android:id="@+id/closebutton"
+				android:layout_width="64dip"
+				android:layout_height="64dip"
+				app:cb_color="#efefef"
+				app:cb_pressedRingWidth="8dip"
+				app:layout_columnWeight="1"
+				app:layout_rowWeight="3"
+				android:src="@drawable/icon_close_vector" />
+		</androidx.gridlayout.widget.GridLayout>
+	</LinearLayout>
+</androidx.core.widget.NestedScrollView>

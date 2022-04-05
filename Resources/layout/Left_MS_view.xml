@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:layout_margin="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:id="@+id/main"
+                android:paddingEnd="3dp"> 
+	<TextView
+        android:id="@+id/name"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/accent"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="17dp"
+        android:layout_below="@+id/name"
+        android:background="@drawable/chat_rounded_left_layout"
+        android:layout_width="wrap_content"
+        android:gravity="start"
+        android:id="@+id/bubble_layout"
+        android:weightSum="3"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+	        android:id="@+id/ForwardLayout"
+	        layout="@layout/ForwardMessageViewLayout" 
+	        android:visibility="gone" /> 
+        
+        <include
+	        android:id="@+id/replied_message_view"
+	        layout="@layout/RepliedMessageViewLayout" 
+	        android:visibility="gone" />
+
+        <include
+	        android:id="@+id/info_container"
+	        layout="@layout/ViewModel_OgLink" 
+	        android:visibility="gone" />
+
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:gravity="end"
+	        android:weightSum="3"
+	        android:layout_gravity="end"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        <WoWonder.Library.Anjo.SuperTextLibrary.SuperTextView
+		        android:id="@+id/active"
+		        android:textSize="14dp"
+		        android:layout_marginTop="8dp"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="8dp"
+		        android:layout_marginEnd="8dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_weight="3"/>
+	        <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_marginTop="2dp"
+		        android:layout_marginBottom="0dp"
+		        android:gravity="bottom|end"
+		        android:layout_gravity="bottom|end">
+		        <com.airbnb.lottie.LottieAnimationView
+			        android:layout_width="30dp"
+			        android:layout_height="30dp"
+			        android:id="@+id/starIcon"
+			        android:gravity="bottom|end"
+			        android:layout_gravity="bottom|end"
+			        android:scaleType="fitCenter"
+			        app:lottie_loop="false"
+			        app:lottie_fileName="FavAnim.json" />
+		        <ImageView
+			        android:id="@+id/fav"
+			        android:layout_width="20dp"
+			        android:layout_height="20dp"
+			        android:src="@drawable/icon_fav_post_vector"
+			        android:gravity="bottom|end"
+			        android:layout_gravity="bottom|end"
+			        android:layout_centerInParent="true"
+			        android:padding="2dp" />
+	        </RelativeLayout> 
+        </LinearLayout>
+	   
+    </LinearLayout>
+   
+  <LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/countLikeSection"
+    android:layout_alignEnd="@+id/bubble_layout"
+    android:layout_below="@+id/bubble_layout"
+    android:layout_width="wrap_content" 
+    android:clickable="true"
+    android:translationY="-5dp"
+    android:visibility="gone"
+    android:gravity="center"
+    android:backgroundTint="?attr/colorFill"
+    android:background="@drawable/shape_radius_btn"
+    android:layout_height="20dp">
+    <ImageView
+      android:id="@+id/ImagecountLike"
+      android:layout_width="16dp"
+      android:layout_height="16dp"
+      android:src="@drawable/emoji_love"
+      android:layout_margin="5dp"
+      android:scaleType="centerCrop" />
+  </LinearLayout>
+  
+  <TextView
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bubble_layout"
+        android:layout_below="@+id/bubble_layout"
+        android:id="@+id/time"
+        android:textColor="#444"
+        android:textSize="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="3dp"
+        android:gravity="bottom|start" 
+        android:text="01:12 PM"
+        android:visibility="gone"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:translationX="0dp"
+        android:paddingBottom="2dp" /> 
+</RelativeLayout>

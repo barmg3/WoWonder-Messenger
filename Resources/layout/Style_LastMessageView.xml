@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	<RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_list_row"
+        android:paddingEnd="@dimen/padding_list_row">
+        <ImageView
+            android:id="@+id/ImageAvatar"
+            android:scaleType="centerCrop"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:src="@drawable/no_profile_image_circle"
+            android:layout_marginStart="5dp" />
+        <refractored.controls.CircleImageView
+            android:id="@+id/ImageLastseen"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/textLight_color"
+            android:layout_alignBottom="@id/ImageAvatar"
+            android:layout_marginBottom="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="44dp"
+            android:layout_above="@id/ImageAvatar"
+            android:src="@drawable/green_online" />
+        <TextView
+            android:id="@+id/Txt_Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxWidth="220dp"
+            android:text=""
+            android:drawablePadding="4dp"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/msg_text_primary"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:paddingEnd="10dp"
+            android:focusable="false"
+            android:layout_toEndOf="@id/ImageAvatar"
+            android:gravity="start"
+            android:textAlignment="textStart" />
+        <ImageView
+            android:id="@+id/IconLastMessages"
+            android:visibility="gone"
+            android:src="@drawable/ic_image_vector"
+            android:layout_toEndOf="@id/ImageAvatar"
+            android:layout_below="@id/Txt_Username"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+        <TextView
+            android:id="@+id/Txt_LastMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_toEndOf="@id/IconLastMessages"
+            android:layout_below="@id/Txt_Username"
+            android:textColor="@color/text_color_in_between"
+            android:textSize="@dimen/msg_text_secondary"
+            android:layout_marginTop="4.5dp"
+            android:layout_marginStart="10dp"
+            android:focusable="false"
+            android:paddingEnd="10dp"
+            android:clickable="false"
+            android:gravity="start"
+            android:textAlignment="textStart" />
+        <TextView
+            android:id="@+id/Txt_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/text_color_in_between"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:focusable="false"
+            android:clickable="false" />
+         
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/Txt_timestamp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" 
+            android:layout_marginTop="10dp"
+            android:clickable="false" 
+            android:focusable="false" >
+             
+	        <ImageView
+		        android:layout_width="15dp"
+		        android:layout_height="15dp"
+		        android:id="@+id/IconMute"
+		        android:foregroundGravity="center_horizontal"
+		        android:gravity="center" 
+		        android:src="@drawable/icon_mute_vector"
+		        android:tint="@color/text_color_in_between"   
+		        android:layout_marginEnd="7dp"  
+				android:visibility="gone"
+		        android:clickable="false"
+		        android:focusable="false" /> 
+	         
+	        <ImageView
+		        android:layout_width="15dp"
+		        android:layout_height="15dp"
+		        android:id="@+id/IconPin"
+		        android:foregroundGravity="center_horizontal"
+		        android:gravity="center"  
+		        android:src="@drawable/icon_pin_vector"
+		        android:tint="@color/text_color_in_between" 
+		        android:layout_marginEnd="7dp" 
+		        android:visibility="gone"
+		        android:clickable="false"
+		        android:focusable="false" /> 
+
+	        <ImageView
+		        android:layout_width="18dp"
+		        android:layout_height="18dp"
+		        android:id="@+id/IconCheckRead"
+		        android:foregroundGravity="center_horizontal"
+		        android:gravity="center" 
+		        android:src="@drawable/ic_tick_vector"
+		        android:tint="@color/accent"  
+		        android:layout_marginEnd="7dp" 
+		        android:visibility="gone"
+		        android:clickable="false"
+		        android:focusable="false" /> 
+
+        </LinearLayout>
+       
+        <View
+            android:id="@+id/line"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="?attr/colorDivider"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignBottom="@id/main" />
+    </RelativeLayout>
+</RelativeLayout>
